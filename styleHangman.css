@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+  font-family: verdana;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.welcome h1 {
+  font-size: 100px;
+}
+
+.welcome button {
+  text-decoration: none;
+  border: none;
+  border-radius: 40px;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  color: white;
+  background: rgb(0, 255, 204, 0.5);
+  padding: 30px 120px;
+  box-shadow: 1px 10px 10px 10px rgb(0, 0, 0, 0.2);
+}
+
+.word, .lines {
+  letter-spacing: 5em;
+}
+
+.word {
+  margin-top: 50px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.again {
+  width: 70%;
+  margin: 20% auto;
+  /* box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17); */
+}
+
+.again button {
+  text-decoration: none;
+  border: none;
+  border-radius: 40px;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  color: white;
+  background: rgb(0, 255, 204, 0.7);
+  padding: 20px 70px;
+  box-shadow: 1px 10px 10px 10px rgb(0, 0, 0, 0.2);
+}
+
+.box {
+  padding: 70px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  z-index: -2;
+}
+
+.alphabet {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: none;
+  box-shadow: #4d4d4d;
+}
+
+.alphabet button {
+  background: rgb(0, 0, 0, 0.2);
+  color: white;
+  border: 1px solid;
+  border-color: rgb(255, 255, 255, 0.5);
+  font-size: 16px;
+}
+
+.welcome button:hover, .again button:hover {
+  background: #3396FF;
+}

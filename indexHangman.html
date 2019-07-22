@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="styleHangman.css">
+  </head>
+  <body>
+    <img src="chalkboard.jpg">
+    <div class="welcome">
+      <h1>Welcome to Hangman!</h1>
+      <button type="button" onclick="start();">Play</button>
+    </div>
+
+    <div class="word"><pre class="pre-word"><pre></div>
+    <div class="lines"></div>
+
+    <div class="box">
+      <canvas></canvas>
+
+      <div class="alphabet">
+        <button id="A" class="button" onclick="checkLetter('A');">A</button>
+        <button id="B" class="button" onclick="checkLetter('B');">B</button>
+        <button id="C" class="button" onclick="checkLetter('C');">C</button>
+        <button id="D" class="button" onclick="checkLetter('D');">D</button>
+        <button id="E" class="button" onclick="checkLetter('E');">E</button>
+        <button id="F" class="button" onclick="checkLetter('F');">F</button>
+        <button id="G" class="button" onclick="checkLetter('G');">G</button>
+        <button id="H" class="button" onclick="checkLetter('H');">H</button>
+        <button id="I" class="button" onclick="checkLetter('I');">I</button>
+        <button id="J" class="button" onclick="checkLetter('J');">J</button>
+        <button id="K" class="button" onclick="checkLetter('K');">K</button>
+        <button id="L" class="button" onclick="checkLetter('L');">L</button>
+        <button id="M" class="button" onclick="checkLetter('M');">M</button>
+        <button id="N" class="button" onclick="checkLetter('N');">N</button>
+        <button id="O" class="button" onclick="checkLetter('O');">O</button>
+        <button id="P" class="button" onclick="checkLetter('P');">P</button>
+        <button id="Q" class="button" onclick="checkLetter('Q');">Q</button>
+        <button id="R" class="button" onclick="checkLetter('R');">R</button>
+        <button id="S" class="button" onclick="checkLetter('S');">S</button>
+        <button id="T" class="button" onclick="checkLetter('T');">T</button>
+        <button id="U" class="button" onclick="checkLetter('U');">U</button>
+        <button id="V" class="button" onclick="checkLetter('V');">V</button>
+        <button id="W" class="button" onclick="checkLetter('W');">W</button>
+        <button id="X" class="button" onclick="checkLetter('X');">X</button>
+        <button id="Y" class="button" onclick="checkLetter('Y');">Y</button>
+        <button id="Z" class="button" onclick="checkLetter('Z');">Z</button>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="again">
+        <h1 id="outcome">Game Over</h1>
+        <h2 id="answer">Word: </h2>
+        <h2 id="score">Your Score: 9</h2>
+        <button type="button" onclick="start();">Play Again</button>
+      </div>
+    </div>
+
+  </body>
+  <script src="codeHangman.js"></script>
+</html>
